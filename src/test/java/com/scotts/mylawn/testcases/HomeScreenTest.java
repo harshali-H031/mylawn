@@ -14,6 +14,7 @@ import com.scotts.mylawn.pages.LawnTips;
 import com.scotts.mylawn.pages.Login;
 import com.scotts.mylawn.pages.RemindersScreen;
 import com.scotts.mylawn.pages.WelcomeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 
 public class HomeScreenTest extends base 
@@ -34,10 +35,7 @@ public class HomeScreenTest extends base
 	}
 	
 	
-	
-	//to verify lawn tips is displayed when tips menu is selected.
-	
-	@Test
+	@Test (description = TestCase.TC12)
 	
 	
        public void TipsVisible()
@@ -49,10 +47,9 @@ public class HomeScreenTest extends base
 		Assert.assertTrue(LT.TipsHeader());
 	}
 	
+
 	
-	//to verify ask is displayed when ask menu is selected.
-	
-	@Test
+	@Test (description = TestCase.TC14)
 	
 		public void AskVisible()
 		{
@@ -67,7 +64,7 @@ public class HomeScreenTest extends base
 	 
 	//to verify ask is displayed when click here option is selected.
 	
-	@Test
+	@Test (description = TestCase.TC15)
 	
 	public void ClickHere()
 	
@@ -83,7 +80,7 @@ public class HomeScreenTest extends base
 	
 	//to verify reminders screen is displayed when Reminders menu is selected.
 	
-	@Test
+	@Test (description = TestCase.TC11)
 	
 	public void RemindVisible()
 	{

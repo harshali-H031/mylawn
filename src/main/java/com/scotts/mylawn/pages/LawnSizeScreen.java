@@ -25,11 +25,11 @@ public class LawnSizeScreen extends base {
 	private static AndroidElement LSCal;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath="android.widget.Button[contains(@text, 'CREATE MY LAWN CARE PLAN')]")
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.Button")
 	private static AndroidElement CLCP;
 	
 	@CacheLookup
-	@AndroidFindBy(id="com.scotts.lawnapp:id/lawn_size")
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText")
 	private static AndroidElement EnterLS;
 	
 	public boolean LSSDisplayed() {
@@ -37,9 +37,9 @@ public class LawnSizeScreen extends base {
     	return LawnSizeScreen.LSTitle.isDisplayed();
 	}
 	
-	public HomeScreen ClickCLCP(String LSize)
+	public HomeScreen ClickCLCP(String Lsize)
 	{
-		LawnSizeScreen.EnterLS.sendKeys(LSize);
+		LawnSizeScreen.EnterLS.sendKeys(Lsize);
 		LawnSizeScreen.CLCP.click();
 		return new HomeScreen();
 	

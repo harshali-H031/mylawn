@@ -23,7 +23,7 @@ public class LawnCondition extends base {
 	private static AndroidElement LCTitle;
 	
 	@CacheLookup
-	@AndroidFindBy(id="com.scotts.lawnapp:id/action_next')]")
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.appcompat.widget.LinearLayoutCompat/android.widget.TextView")
 	private static AndroidElement LCNext;
 	
 	

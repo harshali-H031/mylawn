@@ -23,14 +23,16 @@ public class GrassTypeScreen extends base {
 	
 	
 	@CacheLookup
-	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ImageView")
+	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/image")
 	private static AndroidElement BahiaGrass;
 	
-	/*
-	@CacheLookup
+	
+	
+	/*@CacheLookup
 	@AndroidFindBy(xpath="//android.widget.ImageView[contains(@text, 'Bahia')]")
 	private static AndroidElement BahiaGrass;
 	*/
+	
 	
 	@CacheLookup
 	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/action_next")

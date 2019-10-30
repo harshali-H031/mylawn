@@ -14,6 +14,7 @@ import com.scotts.mylawn.pages.Login;
 import com.scotts.mylawn.pages.SignUp;
 import com.scotts.mylawn.pages.WelcomeScreen;
 import com.scotts.mylawn.pages.ZipCodeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class GrassTypeTest extends base
 {
@@ -36,7 +37,7 @@ public class GrassTypeTest extends base
 	
 	//to verify Lets go screen gets displayed once grass type is selected.
 	
-	@Test
+	@Test (description = TestCase.TC06)
 	
 	public void GrassSelected()
 	{
@@ -47,7 +48,7 @@ public class GrassTypeTest extends base
 		
 	}
 	
-	@Test
+	@Test 
 	
 	public void SelectGrassInfo()
 	{

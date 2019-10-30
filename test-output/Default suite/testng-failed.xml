@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scotts.mylawn.testcases.LoginTest">
+      <class name="com.scotts.mylawn.testcases.LawnSizeTest">
         <methods>
-          <include name="LogScotAcc"/>
           <include name="Setup"/>
+          <include name="SelectCMLCP"/>
         </methods>
-      </class> <!-- com.scotts.mylawn.testcases.LoginTest -->
+      </class> <!-- com.scotts.mylawn.testcases.LawnSizeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

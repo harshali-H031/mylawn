@@ -12,6 +12,7 @@ import com.scotts.mylawn.pages.AskScreen;
 import com.scotts.mylawn.pages.HomeScreen;
 import com.scotts.mylawn.pages.Login;
 import com.scotts.mylawn.pages.WelcomeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class AskScreenTest extends base {
 	
@@ -78,9 +79,7 @@ public class AskScreenTest extends base {
 	*/
 	
 	
-	//to verify Rainfall total info is working when selected.
-	
-		@Test
+		@Test (description = TestCase.TC20)
 		
 		public void OpenRT() throws InterruptedException
 		{

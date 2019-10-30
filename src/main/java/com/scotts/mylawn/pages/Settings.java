@@ -43,17 +43,17 @@ public class Settings extends base
 	
 	public boolean OpenAMLP() 
     {
-    	return AskScreen.OpnRainfall.isDisplayed();
+    	return Settings.OpenAMLP.isDisplayed();
     }
 	
 	public boolean OpenTC() 
     {
-    	return AskScreen.OpnRainfall.isDisplayed();
+    	return Settings.OpenTC.isDisplayed();
     }
 	
 	public boolean OpenPrivacy() 
     {
-    	return AskScreen.OpnRainfall.isDisplayed();
+    	return Settings.OpenPrivacy.isDisplayed();
     }
 	
 	public void SelectAMLP()

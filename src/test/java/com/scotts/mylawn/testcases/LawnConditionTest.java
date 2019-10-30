@@ -27,6 +27,7 @@ public class LawnConditionTest extends base {
 		
         ws.SignupTest();
 		SignUp SU = new SignUp();
+		
 		SU.GuestCheck();
 		
 		ZipCodeScreen ZS = new ZipCodeScreen();
@@ -47,7 +48,7 @@ public class LawnConditionTest extends base {
 	public void SelectLCNext()
 	{
 		LawnCondition LC = new LawnCondition();
-		LC.ClickLCNext();
+		LC.ClickLCNext();  
 		SpreaderScreen SS = new SpreaderScreen();
 		Assert.assertTrue(SS.SSDisplayed());
 		}

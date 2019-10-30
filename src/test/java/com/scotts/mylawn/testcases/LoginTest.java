@@ -11,6 +11,7 @@ import com.scotts.mylawn.base.base;
 import com.scotts.mylawn.pages.HomeScreen;
 import com.scotts.mylawn.pages.Login;
 import com.scotts.mylawn.pages.WelcomeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class LoginTest extends base {
 	
@@ -21,10 +22,8 @@ public class LoginTest extends base {
 	}
 	
 	
-	//to verify login with scotts account
 	
-	
-	@Test
+	@Test  (description = TestCase.TC02)
 	
         public void LogScotAcc() {
 		

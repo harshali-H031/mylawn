@@ -28,9 +28,7 @@ public class SignUpTest extends base {
 	}
 	
 	
-	//@Test(description = Testcase.tc09)
-	
-	@Test (description = TestCase.TESTCASE01)
+	@Test (description = TestCase.TC01)
 	
 	public void SScotAcc() {
 		

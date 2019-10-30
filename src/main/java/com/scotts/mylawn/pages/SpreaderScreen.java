@@ -22,7 +22,7 @@ public class SpreaderScreen extends base {
 	private static AndroidElement SSTitle;
 
 	@CacheLookup
-	@AndroidFindBy(id="com.scotts.lawnapp:id/action_next')]")
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.appcompat.widget.LinearLayoutCompat/android.widget.TextView")
 	private static AndroidElement SSNext;
 	
 	@CacheLookup
@@ -30,7 +30,7 @@ public class SpreaderScreen extends base {
 	private static AndroidElement SSQ;
 	
 	@CacheLookup
-	@AndroidFindBy(xpath="android.widget.TextView[contains(@text, 'Handheld')]")
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")
 	private static AndroidElement SSHandheld;
 	
 	public boolean SSDisplayed() {

@@ -48,12 +48,13 @@ public class LawnSizeTest extends base
 		
 	}
 	//verify sucess lcp creation 
+	
 	@Test
 	
-	public void SelectCMLCP(String LSize)
+	public void SelectCMLCP()
 	{
 		LawnSizeScreen LSS = new LawnSizeScreen();
-		LSS.ClickCLCP(LSize);
+		LSS.ClickCLCP(pro.getProperty("LSIZE"));
 		HomeScreen HS = new HomeScreen();
 		Assert.assertTrue(HS.HomeDisplayed());
 		}
