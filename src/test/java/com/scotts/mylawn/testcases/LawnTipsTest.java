@@ -13,6 +13,7 @@ import com.scotts.mylawn.pages.HomeScreen;
 import com.scotts.mylawn.pages.LawnTips;
 import com.scotts.mylawn.pages.Login;
 import com.scotts.mylawn.pages.WelcomeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class LawnTipsTest extends base
 {
@@ -31,7 +32,7 @@ public class LawnTipsTest extends base
 	}
 	
 	//to verify hero article is working fine
-	@Test
+	@Test (description = TestCase.TC13)
 	
     public void OpnHeroArticle()
 	{

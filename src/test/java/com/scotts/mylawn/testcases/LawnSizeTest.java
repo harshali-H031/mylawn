@@ -16,6 +16,7 @@ import com.scotts.mylawn.pages.SignUp;
 import com.scotts.mylawn.pages.SpreaderScreen;
 import com.scotts.mylawn.pages.WelcomeScreen;
 import com.scotts.mylawn.pages.ZipCodeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class LawnSizeTest extends base
 {
@@ -29,13 +30,15 @@ public class LawnSizeTest extends base
 		
         ws.SignupTest();
 		SignUp SU = new SignUp();
-		SU.GuestCheck();
+		//SU.GuestCheck();
+		SU.ScottsSignup(pro.getProperty("SEMAIL"), (pro.getProperty("PASSWORD")));
 		
 		ZipCodeScreen ZS = new ZipCodeScreen();
 		ZS.GrassDisplayed(pro.getProperty("GROUP1"));
 		
 		GrassTypeScreen GS = new GrassTypeScreen();
 		GS.SelectGrass();
+		
 		
 		LetsGoScreen LGS = new LetsGoScreen();
 		LGS.ClickLetsGo();
@@ -47,15 +50,18 @@ public class LawnSizeTest extends base
 		SS.ClickSSNext();
 		
 	}
-	//verify sucess lcp creation 
+		
+	//To verify lawn care plan is created 
 	
-	@Test
+	@Test (description = TestCase.TC10)
 	
 	public void SelectCMLCP()
 	{
 		LawnSizeScreen LSS = new LawnSizeScreen();
 		LSS.ClickCLCP(pro.getProperty("LSIZE"));
+		
 		HomeScreen HS = new HomeScreen();
+		HS.AddProducts();
 		Assert.assertTrue(HS.HomeDisplayed());
 		}
 

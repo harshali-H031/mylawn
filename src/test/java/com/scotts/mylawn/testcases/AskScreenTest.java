@@ -30,7 +30,7 @@ public class AskScreenTest extends base {
 
 	}
 	
-/*
+
 	//to verify TextUs is working
 	@Test
 	
@@ -57,14 +57,14 @@ public class AskScreenTest extends base {
 		    HS.AskDisplayed();
 			AskScreen AS = new AskScreen();
 			
-            AS.ClickMLCP();
+            AS.OpenMLCP();
 			Assert.assertTrue(AS.OpenMLCP());
 		}
 
 	
 	
 	//to verify fsa info is working when selected.
-	
+/*	
 	@Test
 	
 	public void OpenFSActivities()
@@ -76,6 +76,7 @@ public class AskScreenTest extends base {
         AS.ClickFSAct();
 		Assert.assertTrue(AS.OpenFSA());
 	}
+	
 	*/
 	
 	

@@ -10,6 +10,7 @@ import com.scotts.mylawn.base.base;
 import com.scotts.mylawn.pages.Login;
 import com.scotts.mylawn.pages.RemindersScreen;
 import com.scotts.mylawn.pages.WelcomeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class RemindersTest extends base
 {
@@ -27,7 +28,7 @@ public class RemindersTest extends base
 
 	}
 	
-	@Test
+	@Test (description = TestCase.TC11)
 	
 	public void ClickReminders()
 	{

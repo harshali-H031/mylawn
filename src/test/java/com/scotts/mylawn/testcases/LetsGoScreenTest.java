@@ -13,6 +13,7 @@ import com.scotts.mylawn.pages.LetsGoScreen;
 import com.scotts.mylawn.pages.SignUp;
 import com.scotts.mylawn.pages.WelcomeScreen;
 import com.scotts.mylawn.pages.ZipCodeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class LetsGoScreenTest extends base
 {
@@ -36,7 +37,7 @@ public class LetsGoScreenTest extends base
 		
 	}
 	//to verify lawn condition gets displayed once LetsGo option is selected.
-	@Test
+	@Test (description = TestCase.TC07)
 	
 	public void SelectLetsGo()
 	{

@@ -13,6 +13,7 @@ import com.scotts.mylawn.pages.Login;
 import com.scotts.mylawn.pages.SignUp;
 import com.scotts.mylawn.pages.WelcomeScreen;
 import com.scotts.mylawn.pages.ZipCodeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class ZipCodeTest extends base
 {
@@ -34,7 +35,7 @@ public class ZipCodeTest extends base
 	}
 	
 	//to verify grass type screen gets displayed once zipcode is entered
-	@Test
+	@Test (description = TestCase.TC03)
 	
     public void VerifyZip() {
 		

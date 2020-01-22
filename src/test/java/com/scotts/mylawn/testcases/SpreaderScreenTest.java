@@ -15,6 +15,7 @@ import com.scotts.mylawn.pages.SignUp;
 import com.scotts.mylawn.pages.SpreaderScreen;
 import com.scotts.mylawn.pages.WelcomeScreen;
 import com.scotts.mylawn.pages.ZipCodeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class SpreaderScreenTest extends base {
 	
@@ -45,7 +46,7 @@ public class SpreaderScreenTest extends base {
 	}
 	
 	//verify lawn size is displayed
-	@Test
+	@Test (description = TestCase.TC09)
 	
 	public void SelectSSNext()
 	{

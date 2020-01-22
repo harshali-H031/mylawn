@@ -42,7 +42,7 @@ public class SignUp extends base
 	private static AndroidElement CPwd;
 		
 	@CacheLookup
-	@AndroidFindBy(xpath= "//android.widget.Button[contains(@content-desc, 'CREATE ACCOUNT')]")
+	@AndroidFindBy(xpath= "//android.widget.Button[contains(@text, 'CREATE ACCOUNT')]")
 	private static AndroidElement ScoAcc;
 	
 	@CacheLookup

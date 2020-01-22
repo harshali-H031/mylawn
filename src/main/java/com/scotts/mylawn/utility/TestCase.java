@@ -14,7 +14,7 @@ public interface TestCase {
 	String TC10 = "Verify the functionality when user enter lawn size.";
 	String TC11 = "Verify the data under reminder page";
 	String TC12 = "Verify the UI and data under tips page";
-	String TC13 = "Verify the data under hero carousel if the the data is article";
+	String TC13 = "Verify the data under hero carousel if the data is article";
 	String TC14 = "To verify ask screen is displayed when ask menu is selected.";
 	String TC15 = "To verify ask screen is displayed when 'Click here'  option is selected.";
 	String TC16 = "To verify Terms & Conditions URL is working in About section.";

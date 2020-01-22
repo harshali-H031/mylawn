@@ -48,7 +48,56 @@ public class HomeScreen extends base {
 	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/reminder")
     private static AndroidElement RemindersMenu;
 	
+	@CacheLookup
+	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/fab")
+    private static AndroidElement CustomizePlan;
 	
+	@CacheLookup
+	@AndroidFindBy(xpath="//android.widget.TextView[contains(@text, 'Scotts® Turf Builder® Summer Lawn Food')]")
+    private static AndroidElement AddLawnFood;
+	
+	@CacheLookup
+	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/btn_use_product")
+    private static AndroidElement ApplyProduct;
+	
+	@CacheLookup
+	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/action_add")
+    private static AndroidElement AddProduct;
+	
+	@CacheLookup
+	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/fab_feed")
+    private static AndroidElement SelectFeed;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath="//android.widget.Button[contains (@text, 'APPLIED')]")
+    private static AndroidElement SelectApplied;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath="//android.widget.Button[contains (@text, 'SKIPPED')]")
+    private static AndroidElement SelectSkipped;
+	
+	@CacheLookup
+	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/answer_1")
+    private static AndroidElement SkipReason1;
+	
+	@CacheLookup
+	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/btn_positive")
+    private static AndroidElement SkipDone;
+	
+	@CacheLookup
+	@AndroidFindBy(id="android:id/button1")
+    private static AndroidElement AppliedOk;
+	
+	@CacheLookup
+	@AndroidFindBy(id="com.scotts.lawnapp.alpha:id/btn_negative")
+    private static AndroidElement RatingCancel;
+	
+	@CacheLookup
+	@AndroidFindBy(xpath="//android.widget.Button[contains (@text, 'DONE')]")
+    private static AndroidElement DidYouKnow;
+	
+	
+
 	
     public boolean HomeDisplayed() 
       {
@@ -87,6 +136,23 @@ public class HomeScreen extends base {
 		 HomeScreen.ProfileTab.click();
 		 HomeScreen.Settings.click();
 		 return new Settings();
+		 
+	 }
+	 
+	 public void AddProducts()
+	 {
+		 HomeScreen.SelectApplied.click();
+		 HomeScreen.AppliedOk.click();
+		 HomeScreen.RatingCancel.click();
+		 HomeScreen.CustomizePlan.click();
+		 HomeScreen.SelectFeed.click();
+		 HomeScreen.AddLawnFood.click();
+		 HomeScreen.ApplyProduct.click();
+		 HomeScreen.AddProduct.click();
+		 HomeScreen.SelectSkipped.click();
+		 HomeScreen.SkipReason1.click();
+		 HomeScreen.SkipDone.click();
+		 HomeScreen.DidYouKnow.click();
 		 
 	 }
 }

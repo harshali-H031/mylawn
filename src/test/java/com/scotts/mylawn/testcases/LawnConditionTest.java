@@ -14,6 +14,7 @@ import com.scotts.mylawn.pages.SignUp;
 import com.scotts.mylawn.pages.SpreaderScreen;
 import com.scotts.mylawn.pages.WelcomeScreen;
 import com.scotts.mylawn.pages.ZipCodeScreen;
+import com.scotts.mylawn.utility.TestCase;
 
 public class LawnConditionTest extends base {
 	
@@ -43,7 +44,7 @@ public class LawnConditionTest extends base {
 	
 	//to verify spreader gets displayed once next option is selected.
 	
-	@Test
+	@Test (description = TestCase.TC08)
 	
 	public void SelectLCNext()
 	{
